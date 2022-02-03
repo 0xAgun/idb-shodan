@@ -46,5 +46,5 @@ def mainbody(urls):
         pass
 
 
-with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+with concurrent.futures.ThreadPoolExecutor(20) as executor:
     executor.map(mainbody, j)
